@@ -14,8 +14,8 @@ We have to move on - that's why there is Contao 4. Given the fact that we use [C
 
 ## The Contao library
 
-As of Contao 4, a lot of our libraries _can_ still be used due to backwards compatibility but you _should_ be using alternatives the PHP community offers you.
-__Note:__ This does not mean there are alternatives for any library in Contao! You will need to figure out where you have to use Contao libraries and where you should switch to an alternative. E.g. very specific Contao functionality such as template rendering (`class Template`), DCA loading (class `DcaLoader` and `DcaExtractor`) or `Controller` methods will obviously not have any alternative within the PHP community.
+As of Contao 4, a lot of our libraries _can_ still be used (making transition easier) but you _should_ be using alternatives the PHP community offers you.
+__Note:__ This does not mean there are alternatives for any library in Contao! You will need to figure out where you have to use Contao libraries and where you should switch to an alternative. E.g. very specific Contao functionality such as template rendering (class `Template`), DCA loading (class `DcaLoader` and `DcaExtractor`) or `Controller` methods will obviously not have any alternative within the PHP community.
 
 Here are a few examples of how we used to do things in Contao 3.x (that still work) but can be improved by using more advanced libraries supporting lots of the modern coding principles.
 
