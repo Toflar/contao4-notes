@@ -1,8 +1,8 @@
-# Contao 4 "docs"
+# Contao 4 notes
 
-This repository contains a lot of relevant information collected during discussions amongst the Contao core developer team members.
+This repository contains information collected during discussions amongst the Contao core developer team members.
 
-__Note:__ These are __my__ personal notes! They do not - in any way or another - represent an official team advice.
+__Note:__ These are __my__ personal notes! They do not - in any way or another - represent any official team advice.
 
 ## Index
 
