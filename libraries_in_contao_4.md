@@ -1,4 +1,3 @@
-
 # Contao 4 - The way you should do it
 
 Up to Contao 3 we had many PHP classes that have served us well over the years. However, most of them are with us for many years and thus do not follow lots of coding styles or principles that have been accepted by a broad part of the PHP community over the last few years.
@@ -37,18 +36,17 @@ $strResponse = $objRequest->response;
 
 Contao 4 / PHP Standalone:
 
-The two most used libraries within the PHP community for HTTP requests are probably [Guzzle](https://github.com/guzzle/guzzle3) and [Buzz](https://github.com/kriswallsmith/Buzz). There may be other alternatives that you might consider using.
+The two most used libraries within the PHP community for HTTP requests are probably [Guzzle](https://github.com/guzzle/guzzle) and [Buzz](https://github.com/kriswallsmith/Buzz). There may be other alternatives that you might consider using.
 Here's the same example for Guzzle:
 
 ```php
-use Guzzle\Http\Client;
-use Guzzle\Http\Exception\BadResponseException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\BadResponseException;
 
 $client   = new Client('http://domain.tld');
-$request  = $client->get('/');
 
 try {
-    $response = $request->send();
+    $response = $client->get('/');
     $response = $response->getBody();
 } catch (BadResponseException $e) {
     // Error
